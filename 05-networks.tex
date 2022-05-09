@@ -1,0 +1,62 @@
+\section{Gatekeeper Networks}\label{sec:networks}
+A Gatekeeper network is a group of Gatekeepers that enforces the requirements of a single framework.
+
+Each Gatekeeper network is responsible for maintaining its framework, ensuring it remains useful to the market, i.e., it is sufficient to satisfy dApps’ permissioning requirements, regulatory or otherwise. Each Gatekeeper network will also set its own prices for specified Gateway Pass operations. As a result, Pass prices will vary by Gatekeeper network—to reflect the effort required for User verification.
+
+There is no restriction on the creation of new Gatekeeper networks. However, it is likely that market forces will lead to a small number of consolidated Gatekeeper networks that each enforce a set of common permissioning requirements.
+
+Gatekeeper networks have a specified lifecycle within the Gateway Protocol. They can be created, changed, deactivated, or become dormant.
+
+\subsection{Creating a Gatekeeper Network}
+Any Gatekeeper can propose a new Gatekeeper network by creating a proposal that includes:
+
+\begin{itemize}
+\item A framework (i.e., the proposed requirements for User verification), and;
+\item A set of proposed Pass operation prices.
+\end{itemize}
+
+The proposed network must be supported by one or more Guardians, who will supervise the network’s operation. Once the proposed network has this support, there is a protocol-wide vote by all Governance Token Holders to determine whether the new Gatekeeper network is created.
+
+\subsection{Changing a Gatekeeper Network}
+There are three primary ways a Gatekeeper network can change:
+
+\begin{itemize}
+\item \textbf{A Gatekeeper wants to join or leave the network.} The barrier to joining a network will be low for existing Gatekeepers, as they will already have been vetted by the Guardian.
+\item \textbf{Altering the network’s pass operation prices.} Given the potential impact on dApps, the barrier for price changes will be high.
+\item \textbf{Altering the network’s framework.} Gatekeeper networks must keep their framework up to date to keep them useful and relevant for web3 applications.
+\end{itemize}
+
+\subsection{Removing a Gatekeeper Network}
+Gatekeeper networks and their associated Gateway Pass smart contracts will never need to be actively removed. Instead, a specific Gateway Pass will cease to exist as soon as there is no longer a Gatekeeper that supports its issuance. dApps with locked funds within a top-up wallet will be able to reclaim them from inactive Gatekeeper networks.
+
+In the future, the Protocol may incorporate automatic removal processes for Gatekeeper networks no longer in use.
+
+\subsection{Governance Framework Example}
+The purpose of a Gatekeeper network is to enforce the requirements of its Governance framework. Each framework will reflect dApps permissioning needs, for example, within one or more industries or geographic areas.
+
+Below is an example Requirement set that could be the basis of a Governance framework:
+\clearpage
+{ % begin box to localize effect of arraystretch change
+\renewcommand{\arraystretch}{2.0}
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{@{}|p{0.22\textwidth}|p{0.22\textwidth}|p{0.22\textwidth}|p{0.22\textwidth}|@{}}
+\hline
+\textbf{Technical Requirements} & \textbf{Bot Resistance} & \textbf{User Requirements} & \textbf{Time Requirements} \\
+\hline
+Source IP Address Filters (whitelisting, blacklisting) & Captcha Solving & Country of residence & Day, Month, Year, Time of Day\\
+VPN Discovery (Prevention) & User Interaction Analysis (e.g. Google ReCaptcha v3) & Age & Validity Time of Gateway Pass\\
+Captcha Integration & Facial Liveness & Legal Status & Refresh Interval of Gateway Pass\\
+On-Chain \& Cross-Chain requirements. & & Investor Status & \\
+Wallet Control & & & \\
+Minimum Stake/Balance & & & \\
+Control / Balance / Property on Chain other than GT Token chain & & & \\
+\hline
+\end{tabular}
+\caption{\label{tbl:gn-requirements} Examples of Gatekeeper network requirements.}
+\end{table}
+
+\textbf{Note:} This is purely an example, not a complete list of possible requirements. Gatekeeper networks—and their associated Governance frameworks—can be created to reflect any set of permissioning needs and can be altered in accordance with the Protocol’s Governance process. This enables flexibility to adapt to future permissioning requirements of dApps operating on a variety of chains, or even on L2 solutions.
+
+}

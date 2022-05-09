@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+
+\usepackage{graphicx}
+\usepackage{bytefield}
+\usepackage{makecell}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+\usepackage[]{hyperref}
+%\usepackage[]{authblk} 
+
+
+%\renewcommand\Authfont{\fontsize{12}{14.4}}
+%\renewcommand\Authfont{\small}
+
+
+\title{The Gateway Protocol\\ \small v0.1.1}
+
+
+\author{
+        \small Martin Riedel\\
+        \small \texttt{martin@identity.org}
+        \and
+        \small Seamus Hennessy\\
+        \small \texttt{seamus.hennessy@identity.org}
+        \and
+        \small Phillip Shoemaker\\
+        \small \texttt{phillip@identity.org}
+}
+\date{\today}
+
+
+%\usepackage{draftwatermark}
+%\SetWatermarkText{Confidential\\ \small \date{\today}}
+%\SetWatermarkScale{5}
+%\SetWatermarkColor[gray]{0.95}
+
+
+\hypersetup{
+    pdftitle={The Gateway Protocol},
+    pdfauthor={martin@identity.org},
+    pdfsubject={blockchain},
+    pdfkeywords={blockchain, protocol, dao},
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    colorlinks=true,
+    pdfstartview=Fit,
+    pdfpagemode=UseOutlines,    % this is the option you were lookin for
+    pdfpagelayout=TwoPageRight
+}
+
+\definecolor{light-gray}{gray}{0.85}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+The \textit{Gateway Protocol} is a decentralized, semi-trustless protocol that governs the lifecycle of Gateway Passes (GP), Gatekeeper Networks (GKN) and associated participants like Gatekeepers (GP issuers), users (GP Holders) and integrating dApps (GP verifiers). A gateway pass is a pseudonymous property that is uniquely bound to a gatekeeper network and represents the adherence of a user (represented by a wallet or identifier) to a predetermined set of requirements (framework). Decentralized applications (dApps) are able to integrate into an existing gatekeeper network in a permissionless way and protect their interface by only allowing the interaction of users with existing and valid gateway passes. Gatekeepers are the issuers of gateway passes within a specific GKN and are responsible for the proper verification of users and the issuance of GPs. The Gateway Protocol further supports the value flows around GP lifecycle events that allow Gatekeepers to be reimbursed for their service and the network to collect an operating fee. The Gateway Protocol implements a governance token (CVC) that secures the ecosystem through staking mechanisms. Lastly, a DAO of governance token holders will allow the community to participate in future iterations of the protocol. The Gateway Protocol is a cross-chain protocol, with governance processes of the protocol being restricted to a single ledger.
+\end{abstract}
+
+\normalsize
+
+% Introduction
+\input{01-introduction.tex}
+
+% Gateway Protocol Solution
+\input{02-solution.tex}
+
+% Tokens of the Gateway Protocol
+\input{03-tokens.tex}
+
+% The Gatekeeper Role
+\input{04-gatekeeper.tex}
+
+% Gatekeeper Networks
+\input{05-networks.tex}
+
+% Gatekeeper Incentives
+\input{06-incentives.tex}
+
+% Protocol Governance
+\input{07-governance.tex}
+
+% Governance Token Advanced Usage
+\input{08-gov-token-advanced.tex}
+
+% Summary
+\input{09-summary.tex}
+
+% Acknowledgements
+\input{10-acknowledgements.tex}
+
+% Bibligraphy
+\input{99-bib.tex}
+
+
+\end{document}

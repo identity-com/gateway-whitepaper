@@ -1,0 +1,63 @@
+@startuml
+'left to right direction
+top to bottom direction
+
+title Topology of the Gateway Protocol
+
+rectangle "Gateway Protocol" {
+component Governance
+component Community
+collections "Gatekeeper Networks" as Networks
+component "Gatekeeper Network" as GKN {
+
+actor dApp
+actor User
+actor Gatekeeper
+actor Guardian
+
+
+collections "Gateway Passes" as Passes
+
+component "Gateway Pass" as Pass {
+node PassConfig [
+<b>Pass Config
+====
+Version
+----
+Subject
+----
+Issuer
+----
+Issue Time
+----
+State
+]
+}
+
+Passes -r-> Pass
+User -u-> Passes: Holds
+dApp -u-> Passes: Verifies
+Gatekeeper -u-> Passes: Issues
+Guardian --> Gatekeeper: Supervises
+
+
+node NetworkConfig [
+<b>Network Config
+====
+Framework
+----
+Payments
+----
+Fees
+----
+Pass Properties
+----
+Stake
+]
+
+}
+Networks --> GKN
+
+
+}
+@enduml

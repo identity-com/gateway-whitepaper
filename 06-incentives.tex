@@ -1,0 +1,118 @@
+\section{Gatekeeper Incentives}\label{sec:incentives}
+The Gateway Protocol can only operate with the direct participation of the three primary personas:
+\begin{enumerate}
+\item dApps
+\item Gatekeepers
+\item Gateway Pass Users
+\end{enumerate}
+To ensure each of these personas plays its role reliably and acts in the interests of the Protocol, there must be an appropriate incentives system in place. While incentives are ‘built in’ for dApps and users, Gatekeepers will only participate in the ecosystem if compensated for their efforts.
+Gatekeepers are the Protocol’s validators and oracles. They ensure Gateway Passes are only issued to users per the requirements of an appropriate Gatekeeper network. This is a commercial service with an operational cost and must be financially compensated as in a centralized financial system.
+
+\subsection{Gateway Pass Operations}
+There are six Pass operations, and Gatekeepers can be compensated whenever an operation takes place by charging one or more parties involved. The table below shows the six operations—all of which can be observed on-chain—and indicates which parties could be charged.
+\clearpage
+
+{ % begin box to localize effect of arraystretch change
+\renewcommand{\arraystretch}{1.5}
+\begin{table}
+\centering
+\scriptsize
+\begin{tabular}{@{}|p{0.02\textwidth}|p{0.21\textwidth}|p{0.11\textwidth}|p{0.11\textwidth}|p{0.41\textwidth}|@{}}
+\hline
+ & \textbf{Pass Operation} & \textbf{Chargeable Party} & \textbf{Operation Type} & \textbf{Description} \\
+\hline
+1 & Gatekeeper \textbf{Issues} Pass & User & Write & A Gatekeeper issues a Gateway Pass to a User after verifying they meet all network requirements.\\
+\hline
+2 & Gatekeeper \textbf{Refreshes} Pass & User & Write & Passes expire after a specified amount of time. Gatekeepers can refresh a Gateway Pass after revalidating the User.\\
+\hline
+3 & Gatekeeper Freezes Pass & None & Write & A Gatekeeper Freezes a Pass while investigating possible misuse. This prevents activities with participating dApps until the Pass is unfrozen.\\
+\hline
+4 & Gatekeeper Unfreezes Pass & User & Write & A Gatekeeper Unfreezes a frozen Pass once network requirements are met.\\
+\hline
+5 & Gatekeeper Revokes Pass & None & Write & A Gatekeeper revokes a User’s Gateway Pass if they are no longer able to meet network requirements.\\
+\hline
+6 & User Uses Pass & User or dApp & Read & A dApp Checks for the presence of a valid Gateway Pass before allowing a User to interact with its services.\\
+\hline
+\end{tabular}
+\caption{Gateway Pass Operations}
+\label{tbl:gt-operations}
+\end{table}
+}
+
+\subsection{Compensation within a Gatekeeper Network}
+Compensation for Pass operations will be in accordance with a public network compensation table. Compensation events are bound to Pass operations as seen in Table ~\ref{tbl:gt-operations}.
+Prices for operations taking place between users and Gatekeepers directly can be set by the Gatekeeper in a free-market economy model. In contrast, if the network
+decides to charge the dApp for (successful) Pass verification, the price will be fixed across the entire network. Since verifications are costs that are occurring automatically, consuming dApps need
+a predictable pricing model in order to offset their costs against User of their platform. A Gateway network and its Gatekeepers may choose to not charge for any Pass operations.
+
+Each Gatekeeper network will publish and maintain its own network compensation table. The table specifies the prices (for Gatekeepers) and fees (for the network/protocol) associated with each Pass operation within the network.
+
+The currency used for pricing within a network can be configured dynamically (e.g. native token or third-party interface token standard (ERC20 and similar)).
+
+
+\begin{tcolorbox}[width=\textwidth,colback={light-gray}]
+\textbf{Note:} Protocol aspects such as fixed pricing for dApps can be changed at the Protocol level via a Governance process. For example, an alternative pricing model could force Gatekeeper keep prices in a certain range or requiring dApp's to ‘sign in’ to the current prices of one or more Gatekeepers within a Gatekeeper network. The Governance process used to make such changes is covered in the ‘Gateway Protocol Governance’ section.
+\end{tcolorbox}
+
+\subsection{The Settlement Flow: a Simplified Example}
+One simple way for Gatekeeper incentives to be paid is via the following process flow:
+\begin{enumerate}
+\item A dApp “signs up” for a given Gateway network by:
+\begin{enumerate}
+\item Integrating the associated Gateway Library Code into the dApp to check each User’s wallet for a valid Gateway Pass State.
+\item Registering its wallet public key within the Gatekeeper network.
+\item Funding a Top-Up Wallet to enable Gatekeepers to draw owed funds.
+\end{enumerate}
+\item The dApp “uses” Pass operations, which are tracked within the Usage Data.
+\item Gatekeepers draw funds from the dApp’s Top-Up Wallet according to the network compensation table and dApp Usage Data
+\end{enumerate}
+In this example, Gatekeepers are purely compensated via direct payments from participating dApps.
+
+\subsection{Gatekeeper Compensation Settlement Options}
+The example settlement flow above is a simplified explanation of how a dApp can interact with the Gateway Protocol and pay for Pass operations. In practice, the Gateway Protocol allows multiple settlement paths for payments between Pass consumers (dApps and users) and Gatekeepers.
+
+The following options exist:
+
+{ % begin box to localize effect of arraystretch change
+\renewcommand{\arraystretch}{1.5}
+\begin{table}
+\small
+\centering
+\begin{tabular}{|p{0.15\textwidth}|p{0.80\textwidth}|}
+\hline
+\textbf{Option} & \textbf{Description} \\
+\hline
+\textbf{Direct} or \textbf{Indirect} Payments & \textbf{Direct:} Payments happen on the same chain at the Gateway Pass operation (“GT chain”). Payments are bound to Pass operations by the Smart Contract.\\
+& \textbf{Indirect:} An oracle reads Pass usage from GT chain and collates all Usage on a “Payment chain” where it is settled via a second step. Indirect payments are only suitable for Read operations, as users can’t be tracked easily for delayed payment.\\
+\hline
+\textbf{Read} or \textbf{Write} Pass Operation & \textbf{Write}: Protocol defined Write Operations are Issue, Refresh, Freeze, Unfreeze, and Revoke. These can be further categorized:
+\begin{itemize}
+\item Triggered by User: Issue, Refresh
+\item Triggered by Gatekeeper: Freeze, Unfreeze, Revoke
+\end{itemize}\\
+& \textbf{Read}: An operation that verifies the state of a Gateway Pass in an on-chain transaction. A read operation is generally triggered by a dApp. Examples include:
+\begin{itemize}
+\item Read/Verify operation that invokes the GT Contract actively (Cross-Program Invocation (CPI - Solana) or DelegateCall (EVM)
+\item (Cryptographic) Pass verification within the dApp
+\end{itemize}\\
+\hline
+\textbf{Token} &The token used to compensate Gatekeepers for Token operations. Options:
+\begin{itemize}
+\item \textbf{Native Chain Token:} Use the native Token of “GT chain” (Direct) or the “Payment chain” (Indirect). E.g., SOL on Solana, ONE on Harmony.one.
+\item \textbf{Stablecoin:} Use a stablecoin (e.g., USDC) on “GT chain” (Direct) or “Payment chain” (Indirect). This avoids the need for an exchange rate conversion.
+\end{itemize}\\
+\hline
+\end{tabular}
+\caption{\label{tbl:gt-settlement} Gateway Pass settlement options.}
+\end{table}
+}
+
+\clearpage
+
+Combined, the options above provide Gatekeeper networks with many options for charging dApps and users for their services. Examples of possible settlement flows include:
+
+\begin{enumerate}
+\item Application X (“Solrise”) uses \textbf{Read} operation on Solana (“GT chain”) and \textbf{Indirect} Payments on Solana (“Payment chain”) and settles with \textbf{USDC}. \textbf{Write} operations are not charged.
+\item Application Y (“DeFi Kingdom”) uses \textbf{Read} operation on Harmony.One (“GT chain”) and is charged \textbf{Directly} by the Gatekeeper, settling with \textbf{ONE}. \textbf{Write} operations are charged to users to be settled via \textbf{Direct} payments with \textbf{ONE}.
+\item Users of Application Z (“Metaplex Candymachine”) use \textbf{Write} operations on Solana (“GT chain”) and are charged \textbf{Directly} by the Gatekeeper, settling with \textbf{CVC}, the governance token.
+\end{enumerate}

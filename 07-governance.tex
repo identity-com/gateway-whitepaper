@@ -1,0 +1,62 @@
+\section{Gateway Protocol Governance}\label{sec:governance}
+There is a single DAO for the Gateway Protocol, which is governed by Governance Token Holders.
+
+Any individual who holds Governance Tokens automatically becomes a member of the DAO and can vote on Gateway Protocol Improvements (GPI) via a quadratic voting process. This includes Gatekeepers, which have a vested interest in ensuring the success of the Protocol and the continued relevance and usefulness of the Governance frameworks they enforce.
+
+A Voter’s "power" will be determined by several factors, including:
+
+\begin{itemize}
+\item The amount of Governance Tokens they hold
+\item The time period they have held Governance Tokens for
+\item Gateway Pass constraints
+\end{itemize}
+
+\textbf{Proposals} for GPIs can be made by anyone with an interest in the Gateway Protocol by staking a specified amount of Governance Tokens. Proposals can relate to the entire Protocol or be targeted at a specific Gatekeeper network. Common GPIs may include:
+
+\begin{itemize}
+\item Changes to governance processes in the Gateway Protocol
+\item Setting up new Gatekeeper networks
+\item Changes to Gateway network or Pass lifecycle processes.
+\end{itemize}
+
+To ratify a proposal requires a 40\% minimum quorum AND at least 60\% of the vote. Voters will not lose their stake for failed votes.
+
+\subsection{Other Governance Roles}
+In addition to Governance Token Holders, one additional entity plays a critical governance role within the Gateway Protocol: the Guardian and the Maintainer.
+
+\subsubsection{Guardians}
+Guardians are the authorities with a specific Gatekeeper network. They are also responsible for auditing and supervising
+Gatekeepers to ensure they properly verify users in accordance with their networks’ governance frameworks. Where it
+determines that a Gatekeeper has failed to uphold its duties, the Guardian can slash that Gatekeeper’s stake.
+In the case of serious or repeat infractions, the Guardian can freeze a Gatekeeper from the Protocol by slashing their
+stake below the threshold set by that specific Gatekeeper network.
+
+The Guardians are representatives of the DAO with specific knowledge and experience to perform the supervisory tasks that
+are set by the specific Gatekeeper network that they are in. Therefore, Guardians are voted into their role with the creation
+of a new Gatekeeper network. Additionally Guardians are reconfirmed in regular intervals by members of the DAO. Lastly,
+Guardians can be challenged and replaced anytime by the DAO if evidence of abuse are found.
+
+The Guardian role specifically exists because of the reactive nature and the high degree of professional experience in performing
+their supervisory duties. The slower governance processes of the DAO and the diverse supervisory requirements would not
+make it feasible to manage the process directly by the community.
+
+\subsubsection{Maintainer}
+A Maintainer is an entity that can control and alter Gateway Protocol governance (i.e., smart contracts) in the event that decisions are made within the Protocol that are not programmatically available.
+Maintainers solely act on authority of the DAO and only deploy changes to the protocol based on decisions made by the DAO.
+
+\subsection{Costs of Operating the Protocol}
+Several costs are associated with the operation and governance of the protocol:
+
+\begin{itemize}
+\item \textbf{Upfront Development (one time).} Includes the cost of licensing, development, smart contract audit, and deployment.
+\item \textbf{Maintenance (recurring).} Includes the cost of ongoing development and bug fixing.
+\item \textbf{Operation (recurring).} Includes costs associated with:
+\begin{itemize}
+\item Auditing Gatekeepers
+\item Infrastructure, e.g., oracles, Gatekeeper support, auditing endpoints, etc.
+\item Volume and oracle usage on Solana and other chains
+\item Governance Token/USD price oracle
+\end{itemize}
+\end{itemize}
+
+All of the above costs are absorbed by Identity.com, which will initially serve as the sole maintainer of the Gateway Protocol. Identity.com is actively working on ways to distribute the maintainer role onto multiple stakeholders under the sole control of the underlying DAO.

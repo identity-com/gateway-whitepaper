@@ -1,0 +1,20 @@
+@startuml
+
+title Gateway Pass State Model
+
+state NotFrozenOrRevoked {
+  Active --> Expired: By Network.
+  Expired --> Active: (Re-)Issue
+}
+
+[*] -> Active: Issue
+
+Frozen -> Active: Unfreeze
+
+NotFrozenOrRevoked --> Frozen: Freeze
+
+NotFrozenOrRevoked --> Revoked: Revoke
+
+Revoked --> [*]
+
+@enduml

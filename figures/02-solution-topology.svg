@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="683px" preserveAspectRatio="none" style="width:821px;height:683px;background:#FFFFFF;" version="1.1" viewBox="0 0 821 683" width="821px" zoomAndPan="magnify"><defs/><g><rect height="26.2969" style="stroke:#00000000;stroke-width:1.0;fill:none;" width="289" x="259" y="5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="279" x="264" y="22.9951">Topology of the Gateway Protocol</text><!--MD5=[ac16d5ad60ade28a6aebfdcdee2fd9b2]
+cluster Gateway Protocol--><g id="cluster_Gateway Protocol"><rect height="633" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="808" x="7" y="44.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="145" x="338.5" y="59.292">Gateway Protocol</text></g><!--MD5=[30d2752a5eefac113bcd44179e750840]
+cluster GKN--><g id="cluster_GKN"><rect height="465" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="744" x="39" y="180.2969"/><rect height="10" style="stroke:#181818;stroke-width:1.0;fill:none;" width="15" x="763" y="185.2969"/><rect height="2" style="stroke:#181818;stroke-width:1.0;fill:none;" width="4" x="761" y="187.2969"/><rect height="2" style="stroke:#181818;stroke-width:1.0;fill:none;" width="4" x="761" y="191.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="164" x="329" y="206.292">Gatekeeper Network</text></g><!--MD5=[b632300f590510533cab5fb86117920a]
+cluster Pass--><g id="cluster_Pass"><rect height="235" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:1.0;fill:none;" width="203" x="540" y="239.2969"/><rect height="10" style="stroke:#181818;stroke-width:1.0;fill:none;" width="15" x="723" y="244.2969"/><rect height="2" style="stroke:#181818;stroke-width:1.0;fill:none;" width="4" x="721" y="246.2969"/><rect height="2" style="stroke:#181818;stroke-width:1.0;fill:none;" width="4" x="721" y="250.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="114" x="584.5" y="265.292">Gateway Pass</text></g><!--MD5=[6b85e6aef4139bc8f1cb129d4c43e5fe]
+entity Governance--><g id="elem_Governance"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="126" x="603" y="79.2969"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="709" y="84.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="707" y="86.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="707" y="90.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="618" y="112.292">Governance</text></g><!--MD5=[94bc62b86229173cd44c724aea09b9be]
+entity Community--><g id="elem_Community"><rect fill="#F1F1F1" height="46.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="123" x="375.5" y="79.2969"/><rect fill="#F1F1F1" height="10" style="stroke:#181818;stroke-width:0.5;" width="15" x="478.5" y="84.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="476.5" y="86.2969"/><rect fill="#F1F1F1" height="2" style="stroke:#181818;stroke-width:0.5;" width="4" x="476.5" y="90.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="83" x="390.5" y="112.292">Community</text></g><!--MD5=[33254aff146003d2ceae5cc6b6d6e2b7]
+entity Networks--><g id="elem_Networks"><rect fill="#F1F1F1" height="32.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="27.5" y="88.2969"/><rect fill="#F1F1F1" height="32.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="175" x="23.5" y="84.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="159" x="31.5" y="105.292">Gatekeeper Networks</text></g><!--MD5=[33c09b0b8f03ba9d04441859161d74f0]
+entity dApp--><g id="elem_dApp"><ellipse cx="553" cy="553.7969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M553,561.7969 L553,588.7969 M540,569.7969 L566,569.7969 M553,588.7969 L540,603.7969 M553,588.7969 L566,603.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="39" x="533.5" y="618.292">dApp</text></g><!--MD5=[fee662a292a0353a69bd162820bae93b]
+entity User--><g id="elem_User"><ellipse cx="476" cy="553.7969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M476,561.7969 L476,588.7969 M463,569.7969 L489,569.7969 M476,588.7969 L463,603.7969 M476,588.7969 L489,603.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="31" x="460.5" y="618.292">User</text></g><!--MD5=[1ea7e6a6bd70b15d35cfb97556d9fdcf]
+entity Gatekeeper--><g id="elem_Gatekeeper"><ellipse cx="332" cy="553.7969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M332,561.7969 L332,588.7969 M319,569.7969 L345,569.7969 M332,588.7969 L319,603.7969 M332,588.7969 L345,603.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="87" x="288.5" y="618.292">Gatekeeper</text></g><!--MD5=[e5a8dd47ac942cb165f7489ffe370550]
+entity Guardian--><g id="elem_Guardian"><ellipse cx="313" cy="336.7969" fill="#F1F1F1" rx="8" ry="8" style="stroke:#181818;stroke-width:0.5;"/><path d="M313,344.7969 L313,371.7969 M300,352.7969 L326,352.7969 M313,371.7969 L300,386.7969 M313,371.7969 L326,386.7969 " fill="none" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="63" x="281.5" y="401.292">Guardian</text></g><!--MD5=[a17a837bb87499ddd0c67306a63af068]
+entity Passes--><g id="elem_Passes"><rect fill="#F1F1F1" height="32.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="129" x="383.5" y="352.2969"/><rect fill="#F1F1F1" height="32.2969" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="129" x="379.5" y="348.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="387.5" y="369.292">Gateway Passes</text></g><!--MD5=[50c62ed7fe7bf0ce5ffce2dd190b71cc]
+entity NetworkConfig--><g id="elem_NetworkConfig"><polygon fill="#F1F1F1" points="82,292.2969,92,282.2969,246,282.2969,246,440.0781,236,450.0781,82,450.0781,82,292.2969" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="236" x2="246" y1="292.2969" y2="282.2969"/><line style="stroke:#181818;stroke-width:0.5;" x1="82" x2="236" y1="292.2969" y2="292.2969"/><line style="stroke:#181818;stroke-width:0.5;" x1="236" x2="236" y1="292.2969" y2="450.0781"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="124" x="97" y="315.292">Network Config</text><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="236" y1="318.5938" y2="318.5938"/><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="246" y1="318.5938" y2="308.5938"/><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="236" y1="320.5938" y2="320.5938"/><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="246" y1="320.5938" y2="310.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="80" x="97" y="335.5889">Framework</text><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="236" y1="342.8906" y2="342.8906"/><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="246" y1="342.8906" y2="332.8906"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="71" x="97" y="359.8857">Payments</text><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="236" y1="367.1875" y2="367.1875"/><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="246" y1="367.1875" y2="357.1875"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="33" x="97" y="384.1826">Fees</text><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="236" y1="391.4844" y2="391.4844"/><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="246" y1="391.4844" y2="381.4844"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="111" x="97" y="408.4795">Pass Properties</text><line style="stroke:#181818;stroke-width:1.0;" x1="82" x2="236" y1="415.7813" y2="415.7813"/><line style="stroke:#181818;stroke-width:1.0;" x1="236" x2="246" y1="415.7813" y2="405.7813"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="97" y="432.7764">Stake</text></g><!--MD5=[c108515ead5634c165326860f7fae906]
+entity PassConfig--><g id="elem_PassConfig"><polygon fill="#F1F1F1" points="583.5,292.2969,593.5,282.2969,718.5,282.2969,718.5,440.0781,708.5,450.0781,583.5,450.0781,583.5,292.2969" style="stroke:#181818;stroke-width:0.5;"/><line style="stroke:#181818;stroke-width:0.5;" x1="708.5" x2="718.5" y1="292.2969" y2="282.2969"/><line style="stroke:#181818;stroke-width:0.5;" x1="583.5" x2="708.5" y1="292.2969" y2="292.2969"/><line style="stroke:#181818;stroke-width:0.5;" x1="708.5" x2="708.5" y1="292.2969" y2="450.0781"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="95" x="598.5" y="315.292">Pass Config</text><line style="stroke:#181818;stroke-width:1.0;" x1="583.5" x2="708.5" y1="318.5938" y2="318.5938"/><line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="718.5" y1="318.5938" y2="308.5938"/><line style="stroke:#181818;stroke-width:1.0;" x1="583.5" x2="708.5" y1="320.5938" y2="320.5938"/><line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="718.5" y1="320.5938" y2="310.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="54" x="598.5" y="335.5889">Version</text><line style="stroke:#181818;stroke-width:1.0;" x1="583.5" x2="708.5" y1="342.8906" y2="342.8906"/><line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="718.5" y1="342.8906" y2="332.8906"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="55" x="598.5" y="359.8857">Subject</text><line style="stroke:#181818;stroke-width:1.0;" x1="583.5" x2="708.5" y1="367.1875" y2="367.1875"/><line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="718.5" y1="367.1875" y2="357.1875"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="41" x="598.5" y="384.1826">Issuer</text><line style="stroke:#181818;stroke-width:1.0;" x1="583.5" x2="708.5" y1="391.4844" y2="391.4844"/><line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="718.5" y1="391.4844" y2="381.4844"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="75" x="598.5" y="408.4795">Issue Time</text><line style="stroke:#181818;stroke-width:1.0;" x1="583.5" x2="708.5" y1="415.7813" y2="415.7813"/><line style="stroke:#181818;stroke-width:1.0;" x1="708.5" x2="718.5" y1="415.7813" y2="405.7813"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="598.5" y="432.7764">State</text></g><!--MD5=[2abf584115bebd78460d57e7ac863966]
+link Passes to Pass--><g id="link_Passes_Pass"><path d="M512.539,366.2969 C518.357,366.2969 524.1747,366.2969 529.9925,366.2969 C532.9014,366.2969 535.8103,366.2969 538.7192,366.2969 C539.0828,366.2969 539.4464,366.2969 539.81,366.2969 C539.8554,366.2969 539.9009,366.2969 539.9464,366.2969 " fill="none" id="Passes-to-Pass" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="539.9464,366.2969,530.9464,362.2969,534.9464,366.2969,530.9464,370.2969,539.9464,366.2969" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e32fdab71ef731bda0d12bd41dbc500b]
+reverse link Passes to User--><g id="link_Passes_User"><path d="M449.124,389.6879 C454.265,426.5319 464.56,500.3099 470.809,545.0959 " fill="none" id="Passes-backto-User" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="448.404,384.5279,445.6868,393.9945,449.0953,389.4799,453.6099,392.8884,448.404,384.5279" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="35" x="467" y="511.3638">Holds</text></g><!--MD5=[fe8b4d9e1fa599b492d1eefc5b90ee1f]
+reverse link Passes to dApp--><g id="link_Passes_dApp"><path d="M456.919,389.2369 C475.178,425.9259 512.106,500.1259 534.486,545.0959 " fill="none" id="Passes-backto-dApp" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="454.575,384.5279,455.0046,394.3674,456.8031,389.004,462.1664,390.8025,454.575,384.5279" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="48" x="519" y="511.3638">Verifies</text></g><!--MD5=[7c4fa1d1799304aa0960ae0fc7718505]
+reverse link Passes to Gatekeeper--><g id="link_Passes_Gatekeeper"><path d="M434.367,389.2369 C414.913,425.9259 375.57,500.1259 351.725,545.0959 " fill="none" id="Passes-backto-Gatekeeper" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="436.864,384.5279,429.1147,390.6064,434.5223,388.9456,436.1831,394.3532,436.864,384.5279" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="40" x="377" y="511.3638">Issues</text></g><!--MD5=[6c5f16b9ceeda9dd4d1a1ac53cdec24d]
+link Guardian to Gatekeeper--><g id="link_Guardian_Gatekeeper"><path d="M293.11,404.4169 C279.552,434.7359 266.186,478.4429 279,515.2969 C282.123,524.2799 287.008,532.9669 292.574,540.9419 " fill="none" id="Guardian-to-Gatekeeper" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="295.73,545.2959,293.6872,535.6612,292.7958,541.2474,287.2096,540.356,295.73,545.2959" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="70" x="280" y="511.3638">Supervises</text></g><!--MD5=[a1c16e86d8ac206218c7780608d29635]
+link Networks to GKN--><g id="link_Networks_GKN"><path d="M95.626,120.2979 C85.1373,131.6979 72.5678,147.6299 66,164.2969 C63.9761,169.4331 62.1293,174.6981 60.4454,180.0566 " fill="none" id="Networks-to-GKN" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="60.4454,180.0566,66.9595,172.6697,61.9443,175.2866,59.3274,170.2714,60.4454,180.0566" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[6b236cd7651676236335901e869cb98d]
+@startuml
+'left to right direction
+top to bottom direction
+
+title Topology of the Gateway Protocol
+
+rectangle "Gateway Protocol" {
+component Governance
+component Community
+collections "Gatekeeper Networks" as Networks
+component "Gatekeeper Network" as GKN {
+
+actor dApp
+actor User
+actor Gatekeeper
+actor Guardian
+
+
+collections "Gateway Passes" as Passes
+
+component "Gateway Pass" as Pass {
+node PassConfig [
+<b>Pass Config
+====
+Version
+- - - -
+Subject
+- - - -
+Issuer
+- - - -
+Issue Time
+- - - -
+State
+]
+}
+
+Passes -r-> Pass
+User -u-> Passes: Holds
+dApp -u-> Passes: Verifies
+Gatekeeper -u-> Passes: Issues
+Guardian - -> Gatekeeper: Supervises
+
+
+node NetworkConfig [
+<b>Network Config
+====
+Framework
+- - - -
+Payments
+- - - -
+Fees
+- - - -
+Pass Properties
+- - - -
+Stake
+]
+
+}
+Networks - -> GKN
+
+
+}
+@enduml
+
+@startuml
+top to bottom direction
+
+title Topology of the Gateway Protocol
+
+rectangle "Gateway Protocol" {
+component Governance
+component Community
+collections "Gatekeeper Networks" as Networks
+component "Gatekeeper Network" as GKN {
+
+actor dApp
+actor User
+actor Gatekeeper
+actor Guardian
+
+
+collections "Gateway Passes" as Passes
+
+component "Gateway Pass" as Pass {
+node PassConfig [
+<b>Pass Config
+====
+Version
+- - - -
+Subject
+- - - -
+Issuer
+- - - -
+Issue Time
+- - - -
+State
+]
+}
+
+Passes -r-> Pass
+User -u-> Passes: Holds
+dApp -u-> Passes: Verifies
+Gatekeeper -u-> Passes: Issues
+Guardian - -> Gatekeeper: Supervises
+
+
+node NetworkConfig [
+<b>Network Config
+====
+Framework
+- - - -
+Payments
+- - - -
+Fees
+- - - -
+Pass Properties
+- - - -
+Stake
+]
+
+}
+Networks - -> GKN
+
+
+}
+@enduml
+
+PlantUML version 1.2022.4beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

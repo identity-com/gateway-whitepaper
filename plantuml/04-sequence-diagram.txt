@@ -1,0 +1,34 @@
+@startuml
+actor User as user
+participant dApp_UI as dapp
+participant Gatekeeper as gk
+database Blockchain as block
+
+user -> dapp : Visit web3 service
+activate dapp
+dapp <-> block : Check pass
+return : Missing pass, redirect to GK
+|||
+user -> gk: Request Pass
+activate gk
+gk -> user: Send pass requirements
+user -> gk: Submit evidence
+gk -> gk: Verify evidence
+return: Issue pass transaction
+user -> user: sign pass transaction
+user <-> block: submit pass transaction
+|||
+user -> dapp : Visit web3 service
+activate dapp
+dapp <-> block : Check pass
+dapp -> user: service
+user -> dapp: request transaction
+return: transaction
+user -> user: sign transaction
+user -> block: submit transaction
+activate block
+block -> block: check pass
+block -> block: execute remaining transaction
+return result
+
+@enduml
